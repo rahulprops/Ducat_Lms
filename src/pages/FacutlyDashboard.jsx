@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Sidebar from '../components/Sidebar'
+import Courses from '../components/Courses'
 const FacutlyDashboard = () => {
   return (
-    <div>FacutlyDashboard</div>
+    <div>
+      <Sidebar/>
+      <Courses/>
+    </div>
   )
 }
 
