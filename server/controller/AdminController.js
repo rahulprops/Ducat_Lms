@@ -3,6 +3,11 @@ import adminModel from "../models/admin.model.js";
 import bcrypt from 'bcrypt'
 export const adminRegister=async (req,res)=>{
     const {adminName,adminEmail,adminPass}=req.body;
+    const profile=req.file;
+    console.log(profile,adminName,adminEmail,adminPass)   
+    if(!profile){
+        return handleRes(res,400,"please enter profile")
+    }
     if(!adminName || !adminEmail || !adminPass)
         return handleRes(res,400,"all feilds requied")
     try {
