@@ -108,12 +108,12 @@ const Header = () => {
             />
           </div>
 
-          <button
+          <NavLink to="/register"
             type="button"
             className="btn btn-outline btn-secondary px-8 py-3 font-semibold rounded-full dark:bg-gray-800 dark:text-gray-100"
           >
             Sign Up
-          </button>
+          </NavLink>
           <button
             type="button"
             className="btn btn-outline btn-secondary px-8 py-3 font-semibold rounded-full dark:bg-gray-800 dark:text-gray-100"
